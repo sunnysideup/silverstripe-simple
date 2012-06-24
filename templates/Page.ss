@@ -19,7 +19,7 @@ Change it, enhance it and most importantly enjoy it!
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	$MetaTags(false)
 	<!--[if lt IE 9]>
-	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	<% require themedCSS(reset) %>
 	<% require themedCSS(typography) %>
@@ -35,7 +35,6 @@ Change it, enhance it and most importantly enjoy it!
 	</div>
 </div>
 <% include Footer %>
-<% require javascript(http://code.jquery.com/jquery-1.7.2.js) %>
 <% require javascript(themes/simple/javascript/script.js) %>
 </body>
 </html>
