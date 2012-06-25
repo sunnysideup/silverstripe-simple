@@ -23,7 +23,7 @@ Change it, enhance it and most importantly enjoy it!
 	<![endif]-->
 	<% require themedCSS(reset) %>
 	<% require themedCSS(typography) %>
-	<% require themedCSS(form) %>	
+	<% require themedCSS(form) %>
 	<% require themedCSS(layout) %>
 	<link rel="shortcut icon" href="$ThemeDir/images/favicon.ico" />
 </head>
