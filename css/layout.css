@@ -118,6 +118,7 @@ a.btn:hover {
 		color: #888;
 		margin-bottom: 22px;
 		padding-left: 2em;
+		font-size: 16px;
 	}
 .search-bar form input.action,
 .header .primary li a,
@@ -437,7 +438,7 @@ aside {
 		color: #666;
 	}
 	.footer .section a {
-		border-bottom: 1px dotted #999;
+		border-bottom: 1px dashed  #999;
 	}
 	.footer .left {
 		float: left;

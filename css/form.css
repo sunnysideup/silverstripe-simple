@@ -87,6 +87,9 @@ p.checkbox label.right {vertical-align: bottom;}
 		0px -1px 0px rgba(000,000,000,0.3),
 		0px 1px 0px rgba(255,255,255,0.9);
 }
+.Actions .action:hover {
+	color: #000;
+}
 #MemberLoginForm_LoginForm,
 #MemberLoginForm_LostPasswordForm {
     max-width: 500px
@@ -117,11 +120,12 @@ form label.right {
 clear: both;
 float: right;
 display: block;
-font-size: 0.7em;
+color: #888;
 }
 .main form .middleColumn {
     float: right;
     width: 70% !important;
+    padding-bottom: 0.3em;
 }
 	.main form .middleColumn .middleColumn {
 	    width: 100% !important
@@ -137,10 +141,12 @@ form input.text,
 form textarea,
 form .textajaxuniquetext,
 form select {
-    width: 98%;
+    width: 97%;
     padding: 6px 1%;
     font-size: 15px;
 }
+form select { width: 100%;}
+
 form input.sitetreeurlsegment {
     width: 200px
 }
