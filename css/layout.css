@@ -344,7 +344,7 @@ aside {
 
 
 .content-container {
-	margin-top: 1.2em;
+	margin-top: -1.2em;
 	float: right;
 	width: 73%;
 	padding-bottom: 20px;
