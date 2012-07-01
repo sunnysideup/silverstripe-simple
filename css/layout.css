@@ -433,6 +433,12 @@ aside {
 	.footer a:hover {
 		color: #000
 	}
+	.footer .current a {
+		color: #666;
+	}
+	.footer .section a {
+		border-bottom: 1px dotted #999;
+	}
 	.footer .left {
 		float: left;
 		color: #000;
