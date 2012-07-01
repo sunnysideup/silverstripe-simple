@@ -25,7 +25,7 @@ Change it, enhance it and most importantly enjoy it!
 	<% require themedCSS(typography) %>
 	<% require themedCSS(form) %>
 	<% require themedCSS(layout) %>
-	<link rel="shortcut icon" href="$ThemeDir/images/favicon.ico" />
+	<link rel="shortcut icon" href="/favicon.ico" />
 </head>
 <body class="$ClassName<% if Menu(2) %><% else %> no-sidebar<% end_if %>">
 <% include Header %>
