@@ -62,6 +62,30 @@ p.checkbox label.right {vertical-align: bottom;}
     display: block;
     margin-left: 30%;
     margin-top: 3em;
+	display: inline-block;
+	width: auto;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(
+		top,
+		#edf4fa 0%,
+		#a8a8a8);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#edf4fa),
+		to(#a8a8a8));
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border: 1px solid #949494;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,0.5);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,0.5);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.3),
+		0px 1px 0px rgba(255,255,255,0.9);
 }
 #MemberLoginForm_LoginForm,
 #MemberLoginForm_LostPasswordForm {

@@ -27,7 +27,7 @@ Change it, enhance it and most importantly enjoy it!
 	<% require themedCSS(layout) %>
 	<link rel="shortcut icon" href="/favicon.ico" />
 </head>
-<body class="$ClassName<% if Menu(2) %><% else %> no-sidebar<% end_if %>">
+<body class="$ClassName">
 <% include Header %>
 <div class="main" role="main">
 	<div class="inner">
