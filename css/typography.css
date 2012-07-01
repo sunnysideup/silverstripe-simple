@@ -73,7 +73,7 @@ p.intro {
     margin-bottom: 20px;
     color: #222;
 }
-/* WYSIWYG EDITOR ALIGNMENT CLASSES 
+/* WYSIWYG EDITOR ALIGNMENT CLASSES
 -------------------------------------------- */
 .typography .left {
     text-align: left
@@ -84,7 +84,7 @@ p.intro {
 .typography .right {
     text-align: right
 }
-/* IMAGES 
+/* IMAGES
 -------------------------------------------- */
 .typography img {
     border: none
@@ -106,3 +106,16 @@ p.intro {
     margin-right: auto;
     display: block;
 }
+
+.typography address {
+	font-style: italic;
+	width: 200px;
+	padding: 1em 2em;
+}
+
+.typography blockquote {
+ padding: 1em 3em;
+ font-style: italic;
+}
+
+.typography pre {font-family: "courier new", courier, monospace; line-height: 1.5; font-size: 1em; padding: 0.7em; background-color: #d5d5d5; margin: 0.3em 0; text-indent: -0.3em; line-height: 0.8; white-space: nowrap; font-size: 0.77em }

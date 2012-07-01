@@ -19,6 +19,8 @@ textarea:invalid {
 form .message {
     padding: 6px 15px;
     border: 1px solid;
+		clear: both;
+    display: block;
 }
 form .good {
     background-color: #ecf9d0;
@@ -28,13 +30,38 @@ form .bad {
     background-color: #f9d0d0;
     border-color: #be0000;
 }
+form .message.required, form .message.warning {
+    background-color: #f9d0d0;
+    border-color: #be0000;
+}
+form .field .message {
+	margin-left: 30%;
+}
 .checkbox,
 .radio {
     margin-top: 1px
 }
+
+form p.checkbox {
+    margin-left: 30%;
+    width: auto;
+    height: auto;
+}
+p.checkbox input, p.checkbox label.right {
+ clear: none;
+ float: none;
+ font-size: 1em;
+ display: inline;
+ }
+p.checkbox input {vertical-align: baseline;}
+p.checkbox label.right {vertical-align: bottom;}
+
 #MemberLoginForm_LoginForm_action_dologin,
 .Actions .action {
-    padding: 6px 20px
+    padding: 6px 20px;
+    display: block;
+    margin-left: 30%;
+    margin-top: 3em;
 }
 #MemberLoginForm_LoginForm,
 #MemberLoginForm_LostPasswordForm {
@@ -61,6 +88,12 @@ form label.left {
     margin-top: 3px;
     display: block;
     font-size: 13px;
+}
+form label.right {
+clear: both;
+float: right;
+display: block;
+font-size: 0.7em;
 }
 .main form .middleColumn {
     float: right;
@@ -111,7 +144,7 @@ form .checkboxset li,
 form .optionset li {
     margin-bottom: 5px
 }
-@media only screen and (max-width: 700px) { 
+@media only screen and (max-width: 700px) {
 	.main form .middleColumn {
 	    float: right;
 	    width: 100% !important;
@@ -127,7 +160,7 @@ form .optionset li {
 	    margin-bottom: 8px
 	}
 }
-@media only screen and (min-width: 700px) { 
+@media only screen and (min-width: 700px) {
 	#MemberLoginForm_LoginForm #Remember,
 	#MemberLoginForm_LoginForm .Actions,
 	#MemberLoginForm_LostPasswordForm .Actions {

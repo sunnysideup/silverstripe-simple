@@ -105,7 +105,7 @@ a.btn:hover {
 	    padding: 0;
 	    font-size: 48px;
 	    font-family: "HelveticaNeueLTPro-Bd", "Helvetica Neue LT Pro Bold", "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue LT Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	    color: #fff;
+	    color: green;
 	    font-weight: 600;
 	    font-stretch: normal;
 	    line-height: 1em;
@@ -117,6 +117,7 @@ a.btn:hover {
 	.brand p {
 	    color: #888;
 	    margin-bottom: 22px;
+	    padding-left: 2em;
 	}
 .search-bar form input.action,
 .header .primary li a,
@@ -299,8 +300,8 @@ aside {
 		    -webkit-transition: 0.2s;
 		    transition: 0.2s;
 		}
-	.secondary li:hover .arrow {
-	    left: 6px
+	.secondary li:hover span {
+	    color: green;
 	}
 	.secondary li a {
 	    padding: 8px 0;
@@ -317,24 +318,53 @@ aside {
 	    padding-left: 28px;
 	    display: block;
 	}
-	.secondary li.section,
-	.secondary li.current {
+	.secondary li.current a {
 	    background-color: #f7f7f7
 	}
-		.secondary li.section a,
 		.secondary li.current a {
 		    color: #000
 		}
+		.secondary li li a span.text, .secondary li li a span.arrow{text-indent: 0.5em; font-size: 0.9}
+		.secondary li li li a span.text, .secondary li li li a span.arrow{text-indent: 1em; font-size: 0.9}
+		.secondary li li li li a span.text, .secondary li li li li a span.arrow{text-indent: 1.5em; font-size: 0.9}
+
+/************
+ * RESET
+ ************/
+	.secondary li.current li.link a {
+	    background-color: transparent;
+	}
+		.secondary li.current li.link a  {
+		    color: #333
+		}
+	.secondary li:hover li .text {
+	    color: #000;
+	}
+
+
+
 .content-container {
     float: right;
     width: 73%;
     padding-bottom: 20px;
 }
+
+
 .no-sidebar .content-container {
     float: left
 }
 .header {
     background: #161616
+background: rgb(51,51,51); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(51,51,51,1) 0%, rgba(22,22,22,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(51,51,51,1)), color-stop(100%,rgba(22,22,22,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(51,51,51,1) 0%,rgba(22,22,22,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(51,51,51,1) 0%,rgba(22,22,22,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(51,51,51,1) 0%,rgba(22,22,22,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(51,51,51,1) 0%,rgba(22,22,22,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#161616',GradientType=0 ); /* IE6-9 */
+
+
 }
 	.header .inner {
 	    padding-top: 45px;
@@ -457,7 +487,7 @@ aside {
     display: none;
     visibility: hidden;
 }
-@media only screen and (max-width: 960px) { 
+@media only screen and (max-width: 960px) {
 	.content img {
 	    width: 97%;
 	    height: auto;
@@ -469,7 +499,7 @@ aside {
 	}
 }
 /* when changing the breakpoint below, change it ito the same value in the script.js file as well */
-@media only screen and (max-width: 640px) { 
+@media only screen and (max-width: 640px) {
 	body {
 	    max-width: 640px
 	}
@@ -644,7 +674,7 @@ aside {
 	    width: 100%;
 	}
 }
-@media print { 
+@media print {
 	* {
 	    background: transparent !important;
 	    color: black !important;
