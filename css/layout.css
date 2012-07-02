@@ -63,10 +63,10 @@ a.btn:hover {
 	float: left;
 	margin: 6px 20px 10px 0;
 }
-.content ul {
+.content-container ul {
 	margin: 20px 0 20px 30px
 }
-.content li {
+.content-container li {
 	line-height: 22px;
 	margin-bottom: 5px;
 	list-style-type: disc;
