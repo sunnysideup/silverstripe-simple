@@ -3,49 +3,49 @@
 .ui-widget select,
 .ui-widget textarea,
 .ui-widget button {
-    font-family: Arial, Helvetica, sans-serif !important
+	font-family: Arial, Helvetica, sans-serif !important
 }
 input:invalid,
 textarea:invalid {
-    border-radius: 1px;
-    -moz-box-shadow: 0px 0px 5px red;
-    -webkit-box-shadow: 0px 0px 5px red;
-    box-shadow: 0px 0px 5px red;
+	border-radius: 1px;
+	-moz-box-shadow: 0px 0px 5px red;
+	-webkit-box-shadow: 0px 0px 5px red;
+	box-shadow: 0px 0px 5px red;
 }
 .no-boxshadow input:invalid,
 .no-boxshadow textarea:invalid {
-    background-color: #f0dddd
+	background-color: #f0dddd
 }
 form .message {
-    padding: 6px 15px;
-    border: 1px solid;
+	padding: 6px 15px;
+	border: 1px solid;
 		clear: both;
-    display: block;
+	display: block;
 }
 form .good {
-    background-color: #ecf9d0;
-    border-color: #8fbe00;
+	background-color: #ecf9d0;
+	border-color: #8fbe00;
 }
 form .bad {
-    background-color: #f9d0d0;
-    border-color: #be0000;
+	background-color: #f9d0d0;
+	border-color: #be0000;
 }
 form .message.required, form .message.warning {
-    background-color: #f9d0d0;
-    border-color: #be0000;
+	background-color: #f9d0d0;
+	border-color: #be0000;
 }
 form .field .message {
 	margin-left: 30%;
 }
 .checkbox,
 .radio {
-    margin-top: 1px
+	margin-top: 1px
 }
 
 form p.checkbox {
-    margin-left: 30%;
-    width: auto;
-    height: auto;
+	margin-left: 30%;
+	width: auto;
+	height: auto;
 }
 p.checkbox input, p.checkbox label.right {
  clear: none;
@@ -56,15 +56,16 @@ p.checkbox input, p.checkbox label.right {
 p.checkbox input {vertical-align: baseline;}
 p.checkbox label.right {vertical-align: bottom;}
 
+
 #MemberLoginForm_LoginForm_action_dologin,
 .Actions .action {
-    padding: 6px 20px;
-    display: block;
-    margin-left: 30%;
-    margin-top: 3em;
-	display: inline-block;
+	margin-left: 30%;
+	margin-top: 1em;
+	color: #147032;
+
+	padding: 8px 20px 6px 20px;
+	display: block;
 	width: auto;
-	padding: 10px 20px;
 	background: -moz-linear-gradient(
 		top,
 		#edf4fa 0%,
@@ -73,9 +74,9 @@ p.checkbox label.right {vertical-align: bottom;}
 		linear, left top, left bottom,
 		from(#edf4fa),
 		to(#a8a8a8));
-	border-radius: 10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
+	border-radius: 1em;
+	-moz-border-radius: 1em;
+	-webkit-border-radius: 1em;
 	border: 1px solid #949494;
 	-moz-box-shadow:
 		0px 1px 3px rgba(000,000,000,0.5),
@@ -86,35 +87,49 @@ p.checkbox label.right {vertical-align: bottom;}
 	text-shadow:
 		0px -1px 0px rgba(000,000,000,0.3),
 		0px 1px 0px rgba(255,255,255,0.9);
+
+	font: bold 0.9em/0.9em Helvetica, Sans-Serif; text-align: center;
+	text-transform: uppercase; text-decoration: none;
+	text-shadow: 0px 1px 2px #b4d1ad;
+	-moz-transition: color 0.25s ease-in-out;
+	-webkit-transition: color 0.25s ease-in-out;
+	transition: color 0.25s ease-in-out;
 }
+
+#MemberLoginForm_LoginForm_action_dologin:hover,
 .Actions .action:hover {
 	color: #000;
+	-moz-transition: color 0.25s ease-in-out;
+	-webkit-transition: color 0.25s ease-in-out;
+	transition: color 0.25s ease-in-out;
 }
+.Actions p {margin-left: 30%;}
+
 #MemberLoginForm_LoginForm,
 #MemberLoginForm_LostPasswordForm {
-    max-width: 500px
+	max-width: 500px
 }
 #ForgotPassword a {
-    margin-top: 15px
+	margin-top: 15px
 }
 #ForgotPassword {
-    margin-top: 6px
+	margin-top: 6px
 }
 div.field {
-    width: 100%;
-    float: left;
-    margin-bottom: 20px;
+	width: 100%;
+	float: left;
+	margin-bottom: 20px;
 }
 .ui-widget {
-    font-family: Arial, Helvetica, sans-serif
+	font-family: Arial, Helvetica, sans-serif
 }
 form label.left {
-    float: left;
-    width: 25%;
-    padding-right: 5%;
-    margin-top: 3px;
-    display: block;
-    font-size: 13px;
+	float: left;
+	width: 25%;
+	padding-right: 5%;
+	margin-top: 3px;
+	display: block;
+	font-size: 13px;
 }
 form label.right {
 clear: both;
@@ -123,77 +138,87 @@ display: block;
 color: #888;
 }
 .main form .middleColumn {
-    float: right;
-    width: 70% !important;
-    padding-bottom: 0.3em;
+	float: right;
+	width: 70% !important;
+	padding-bottom: 0.3em;
 }
 	.main form .middleColumn .middleColumn {
-	    width: 100% !important
+		width: 100% !important
 	}
 .header form .middleColumn {
-    float: none;
-    width: 100% !important;
+	float: none;
+	width: 100% !important;
 }
 .listbox option {
-    padding: 3px 0
+	padding: 3px 0
 }
 form input.text,
 form textarea,
 form .textajaxuniquetext,
 form select {
-    width: 97%;
-    padding: 6px 1%;
-    font-size: 15px;
+	width: 97%;
+	padding: 6px 1%;
+	font-size: 15px;
 }
 form select { width: 100%;}
 
 form input.sitetreeurlsegment {
-    width: 200px
+	width: 200px
 }
 form span.readonly {
-    font-size: 16px
+	font-size: 16px
 }
 form input[disabled] {
-    background-color: #f7f7f7;
-    border: 1px solid #dad9d9;
+	background-color: #f7f7f7;
+	border: 1px solid #dad9d9;
 }
 form .creditCardField input,
 form input.currency {
-    padding: 5px 1%;
-    width: 50px;
+	padding: 5px 1%;
+	width: 50px;
 }
 form input.numeric {
-    padding: 5px 1%;
-    width: 50px;
+	padding: 5px 1%;
+	width: 50px;
 }
 form #DMYDate-month,
 form #DMYDate-day {
-    width: 25px
+	width: 25px;
+}
+form .middleColumn .checkboxset,
+form .middleColumn .optionset   {
+	padding: 0px;
+	margin: 0px;
 }
 form .checkboxset li,
 form .optionset li {
-    margin-bottom: 5px
+	margin-bottom: 5px;
+	line-height: 1;
+	list-style-type: none;
+	width: 25%;
+	padding-right: 7%;
+	float: left;
 }
+
+
+.confirmedpassword {position: relative;}
+.confirmedpassword a {position: absolute; left: 0px;}
+
+
 @media only screen and (max-width: 700px) {
 	.main form .middleColumn {
-	    float: right;
-	    width: 100% !important;
-	    : ;
+		float: right;
+		width: 100% !important;
+		: ;
 	}
 	.header form .middleColumn {
-	    float: none;
-	    width: 100% !important;
-	    : ;
+		float: none;
+		width: 100% !important;
+		: ;
 	}
 	form label.left,
 	#MemberLoginForm_LoginForm label {
-	    margin-bottom: 8px
+		margin-bottom: 8px
 	}
 }
-@media only screen and (min-width: 700px) {
-	#MemberLoginForm_LoginForm #Remember,
-	#MemberLoginForm_LoginForm .Actions,
-	#MemberLoginForm_LostPasswordForm .Actions {
-	    padding-left: 30%
-	}
-}
+
