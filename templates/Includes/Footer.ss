@@ -5,7 +5,7 @@
 			&copy;
 			Template: <a href="http://www.saratusar.com">Sara Tusar</a> /
 			CMS: <a href="http://silverstripe.org">Silverstripe</a> /
-			Direction: <a href="http://www.sunnysideup.co.nz">Sunny Side Up</a>
+			Production: <a href="http://www.sunnysideup.co.nz">Sunny Side Up</a>
 		</small>
 	</div>
 </footer>
