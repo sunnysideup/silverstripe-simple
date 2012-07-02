@@ -14,9 +14,9 @@ Change it, enhance it and most importantly enjoy it!
 <!--[if IE 8 ]><html lang="$ContentLocale" class="ie ie8"><![endif]--><head>
 	<% base_tag %>
 	<title><% if MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> &raquo; $SiteConfig.Title</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	$MetaTags(false)
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -30,7 +30,7 @@ Change it, enhance it and most importantly enjoy it!
 <body class="$ClassName">
 <% include Header %>
 <div class="main" role="main">
-	<div class="inner">
+	<div class="inner typography">
 		$Layout
 	</div>
 </div>
